@@ -2,7 +2,7 @@
 #####################################
 # setup.sh
 #
-# Author: Michael Lindholm
+# Author: 
 #####################################
 # Update apt cache
 sudo apt-get update
@@ -17,8 +17,8 @@ sudo apt-get install -y fbi screen omxplayer imagemagick python-pygame git
 mkdir -p git-tmp
 cd $HOME
 cd git-tmp
-rm -rf RaspPiSlideshow
-git clone https://github.com/micglin/RaspPiSlideshow
-cd RaspPiSlideshow
+rm -rf genetics_PIdisplay
+git clone https://github.com/hgw3lls/genetics_PIdisplay.git
+cd genetics_PIdisplay
 chmod a+x install.sh
 sudo ./install.sh

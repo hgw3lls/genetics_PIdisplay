@@ -2,7 +2,7 @@
 #####################################
 # slides.sh
 #
-# Author: Michael Lindholm
+# Author:
 #####################################
 
 # Generate slides.txt on first run.

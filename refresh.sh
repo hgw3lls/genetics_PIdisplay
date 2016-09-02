@@ -2,7 +2,7 @@
 #####################################
 # refresh.sh
 #
-# Author: Michael Lindholm
+# Author: 
 #####################################
 
 DATE=`date`
