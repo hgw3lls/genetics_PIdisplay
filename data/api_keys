@@ -1,0 +1,7 @@
+openweathermap: 202848779549e564017366fa9e825d13
+
+api.openweathermap.org/data/2.5/forecast?q=Cleveland,us&APPID=202848779549e564017366fa9e825d13 
+
+https://github.com/csparpa/pyowm.git
+
+https://github.com/csparpa/pyowm/wiki/Usage-examples
