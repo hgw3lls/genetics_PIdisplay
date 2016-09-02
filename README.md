@@ -13,7 +13,7 @@ Downloaded from: https://www.raspberrypi.org/downloads/raspbian/
 (currently) Perform initial boot and configuration of device, expand file system to fill SD card.
 
 from ssh session or console:
-	wget https://raw.githubusercontent.com/micglin/RaspPiSlideshow/master/setup.sh
+	wget https://raw.githubusercontent.com/hgw3lls/genetics_PIdisplay/master/setup.sh
 	chmod a+x setup.sh
 	./setup.sh
 
