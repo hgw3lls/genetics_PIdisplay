@@ -1,4 +1,4 @@
-# RaspPiSlideshow
+# genetics_PIdisplay
 Scripts/configs for a simple image slideshow on Raspberry Pi
 
 To setup a Raspberry Pi from scratch.

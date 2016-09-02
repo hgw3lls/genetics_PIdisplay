@@ -2,7 +2,7 @@
 #####################################
 # video.sh
 #
-# Author: Michael Lindholm
+# Author:
 #####################################
 
 # Capture first video filename to variable
