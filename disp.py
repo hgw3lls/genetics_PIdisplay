@@ -156,8 +156,8 @@ def mainLoop():
     borderColor = (255, 255, 255)
     lineColor = (64, 64, 64)
 
-    s1w = 1541
-    s1h = 869
+    s1w = 1440
+    s1h = 900
     so = 5
     pygame.draw.rect(DISPLAYSURF, borderColor, (so,so,s1w,s1h), 1)
     pygame.draw.rect(DISPLAYSURF, borderColor, (2*so+s1w,so,364,131), 1)
