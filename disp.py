@@ -67,7 +67,7 @@ def main():
     global line1, line2
 
     load_text()
-    load_stock()
+    #load_stock()
     load_weather()
     
     last_slide = now
@@ -215,29 +215,29 @@ def mainLoop():
        logo_num = logo_num+1
     
     # Display Stock Info
-    font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 50)
-    text_surface = font.render(stock['name'], True, (255, 255, 255), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,515))
+    # font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 50)
+    # text_surface = font.render(stock['name'], True, (255, 255, 255), None)  # White text  
+    # DISPLAYSURF.blit(text_surface, (2*so+s1w+5,515))
 
-    font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 30)
-    text_surface = font.render(stock['share'], True, (200, 255, 200), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,565))
+    # font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 30)
+    # text_surface = font.render(stock['share'], True, (200, 255, 200), None)  # White text  
+    # DISPLAYSURF.blit(text_surface, (2*so+s1w+5,565))
 
-    font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 50)
-    text_surface = font.render("" + stock['change'], True, (255, 100, 100), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,615))
+    # font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 50)
+    # text_surface = font.render("" + stock['change'], True, (255, 100, 100), None)  # White text  
+    # DISPLAYSURF.blit(text_surface, (2*so+s1w+5,615))
 
-    font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 50)
-    text_surface = font.render("Price: " + stock['price'], True, (200, 200, 200), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,665))
+    # font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 50)
+    # text_surface = font.render("Price: " + stock['price'], True, (200, 200, 200), None)  # White text  
+    # DISPLAYSURF.blit(text_surface, (2*so+s1w+5,665))
  
-    font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 20)
-    text_surface = font.render("Todays High: " + stock['high'], True, (255, 200, 200), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,735))
+    # font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 20)
+    # text_surface = font.render("Todays High: " + stock['high'], True, (255, 200, 200), None)  # White text  
+    # DISPLAYSURF.blit(text_surface, (2*so+s1w+5,735))
 
-    font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 20)
-    text_surface = font.render("Todays Low: " + stock['low'], True, (255, 200, 200), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,765))
+    # font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 20)
+    # text_surface = font.render("Todays Low: " + stock['low'], True, (255, 200, 200), None)  # White text  
+    # DISPLAYSURF.blit(text_surface, (2*so+s1w+5,765))
 
     # Display Weather
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 50)
