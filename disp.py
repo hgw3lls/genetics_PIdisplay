@@ -149,7 +149,7 @@ def mainLoop():
     global line1, line2, stock, weather
     now = time.time()
     
-    DISPLAYSURF.fill(BLUE)
+    DISPLAYSURF.fill(WHITE)
     #bg = pygame.image.load('/var/media/bg.jpg').convert()
     #DISPLAYSURF.blit(bg, (0,870))
     
@@ -159,12 +159,14 @@ def mainLoop():
     s1w = 1440
     s1h = 900
     so = 5
-    pygame.draw.rect(DISPLAYSURF, borderColor, (so,so,s1w,s1h), 1)
+    #pygame.draw.rect(DISPLAYSURF, borderColor, (so,so,s1w,s1h), 1)
     #pygame.draw.rect(DISPLAYSURF, borderColor, (2*so+s1w,so,364,131), 1)
-    #pygame.draw.rect(DISPLAYSURF, borderColor, (2*so+s1w,141,364,728), 1)
+    pygame.draw.rect(DISPLAYSURF, BLUE, (2*so+s1w,5,1920-s1w-3*so,1920-s1w-3*so), 0)
+    pygame.draw.rect(DISPLAYSURF, BLUE, (2*so+s1w,480,1920-s1w-3*so,425), 0)
     #pygame.draw.rect(DISPLAYSURF, borderColor, (2*so+s1w,510,364,364), 1)
     pygame.draw.rect(DISPLAYSURF, WHITE, (0,0,1920-1,1080-1), 1)
-
+    pygame.draw.rect(DISPLAYSURF, BLUE, (5,s1h+2*so,1920-2*so,1080-s1h-3*so), 0)
+    
     # Display Slides
     slides = [f for f in listdir(SLIDES_DIR) if isfile(join(SLIDES_DIR, f))]
 
