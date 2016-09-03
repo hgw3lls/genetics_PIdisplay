@@ -161,8 +161,8 @@ def mainLoop():
     so = 5
     pygame.draw.rect(DISPLAYSURF, borderColor, (so,so,s1w,s1h), 1)
     pygame.draw.rect(DISPLAYSURF, borderColor, (2*so+s1w,so,364,131), 1)
-    pygame.draw.rect(DISPLAYSURF, borderColor, (2*so+s1w,141,364,364), 1)
-    pygame.draw.rect(DISPLAYSURF, borderColor, (2*so+s1w,510,364,364), 1)
+    pygame.draw.rect(DISPLAYSURF, borderColor, (2*so+s1w,141,364,728), 1)
+    #pygame.draw.rect(DISPLAYSURF, borderColor, (2*so+s1w,510,364,364), 1)
     pygame.draw.rect(DISPLAYSURF, WHITE, (0,0,1920-1,1080-1), 1)
 
     # Display Slides
