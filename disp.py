@@ -113,11 +113,11 @@ def main():
 
 # a funtion to do something
 def dispLogo():
-    DISPLAYSURF.fill(BLACK)
+    #DISPLAYSURF.fill(BLACK)
 
     logo = pygame.image.load("/var/media/logos/GGS_Case Logo Wide.png").convert()
-    logo2 = pygame.transform.scale(logo, (DISPLAY_W, DISPLAY_H))
-    DISPLAYSURF.blit(logo2, (0,0))
+    #logo2 = pygame.transform.scale(logo, (DISPLAY_W, DISPLAY_H))
+    DISPLAYSURF.blit(logo, (0,0))
 
     
 
