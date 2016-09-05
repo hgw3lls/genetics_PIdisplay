@@ -210,8 +210,8 @@ def mainLoop():
       logo_num=0;
 
     logo = pygame.image.load(LOGOS_DIR+logos[logo_num]).convert()
-    #logo2 = pygame.transform.scale(logo, (362,129))
-    DISPLAYSURF.blit(logo, (2*so+s1w,5))
+    logo2 = pygame.transform.scale(logo, (500,500))
+    DISPLAYSURF.blit(logo2, (2*so+s1w,5))
     if now-last_logo > update_logo:
        last_logo = now
        logo_num = logo_num+1
