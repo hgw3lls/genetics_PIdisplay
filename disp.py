@@ -16,7 +16,7 @@ os.environ["SDL_FBDEV"] = "/dev/fb0"
 os.environ["SDL_NOMOUSE"]="1"
 
 SLIDES_DIR = "/var/media/current/"
-LOGOS_DIR =  "/var/media/logos/topright"
+LOGOS_DIR =  "/var/media/logos/topright/"
 DATA_DIR =  "/var/media/data/"
 WEATHER_IMG = "/var/media/data/yimg/"
 
