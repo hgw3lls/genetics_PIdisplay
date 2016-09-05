@@ -113,11 +113,11 @@ def main():
 
 # a funtion to do something
 def dispLogo():
-    #DISPLAYSURF.fill(BLACK)
+    DISPLAYSURF.fill(BLACK)
 
     logo = pygame.image.load("/var/media/logos/GGS_Case Logo Wide.png").convert()
-    #logo2 = pygame.transform.scale(logo, (DISPLAY_W, DISPLAY_H))
-    DISPLAYSURF.blit(logo, (0,0))
+    logo2 = pygame.transform.scale(logo, (DISPLAY_W, DISPLAY_H))
+    DISPLAYSURF.blit(logo2, (0,0))
 
     
 
@@ -210,8 +210,8 @@ def mainLoop():
       logo_num=0;
 
     logo = pygame.image.load(LOGOS_DIR+logos[logo_num]).convert()
-    logo2 = pygame.transform.scale(logo, (362,129))
-    DISPLAYSURF.blit(logo2, (2*so+s1w+1,so+1))
+    #logo2 = pygame.transform.scale(logo, (362,129))
+    DISPLAYSURF.blit(logo, (2*so+s1w,5))
     if now-last_logo > update_logo:
        last_logo = now
        logo_num = logo_num+1
