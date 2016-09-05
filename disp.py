@@ -240,71 +240,71 @@ def mainLoop():
     # font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 20)
     # text_surface = font.render("Todays Low: " + stock['low'], True, (255, 200, 200), None)  # White text  
     # DISPLAYSURF.blit(text_surface, (2*so+s1w+5,765))
-
+    move_y_axis = 50
     # Display Weather
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 50)
     text_surface = font.render(weather['location'], True, (255, 255, 255), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,480))
+    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,480+move_y_axis))
     
 #    pygame.draw.rect(DISPLAYSURF, (255,255,255), (2*so+s1w+5,195,350,150), 0)
     if os.path.isfile(WEATHER_IMG+weather['current_conditions']['icon']+".gif"):
       icon = pygame.image.load(WEATHER_IMG+weather['current_conditions']['icon']+".gif").convert()
-      DISPLAYSURF.blit(icon, (2*so+s1w+5,530))
+      DISPLAYSURF.blit(icon, (2*so+s1w+5,530 + move_y_axis))
 
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 50)
     text_surface = font.render(weather['current_conditions']['temperature']+"F", True, BLACK)  # Black text 
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+100,530))
+    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+100,530 + move_y_axis))
 
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 30)
     text_surface = font.render(weather['current_conditions']['text'], True, GRAY) 
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,585))
+    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,585 + move_y_axis))
 
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 30)
     text_surface = font.render("Wind: " + string.lower(weather['current_conditions']['wind']['speed']) + weather['current_conditions']['wind']['text'], True, (100, 100, 100))
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,635))
+    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,635 + move_y_axis))
 
 #    pygame.draw.rect(DISPLAYSURF, (255,255,255), (2*so+s1w+5,350,55,55), 0)
 #    pygame.draw.rect(DISPLAYSURF, (255,255,255), (2*so+s1w+5+110,350,55,55), 0)
 #    pygame.draw.rect(DISPLAYSURF, (255,255,255), (2*so+s1w+5+220,350,55,55), 0)
     if os.path.isfile(WEATHER_IMG+weather['current_conditions']['icon']+".gif"):
       icon = pygame.image.load(WEATHER_IMG+weather['current_conditions']['icon']+".gif").convert()
-      DISPLAYSURF.blit(icon, (2*so+s1w+5,690))
+      DISPLAYSURF.blit(icon, (2*so+s1w+5,690 + move_y_axis))
     if os.path.isfile(WEATHER_IMG+weather['forecasts'][1]['day']['icon']+".gif"):
       icon = pygame.image.load(WEATHER_IMG+weather['forecasts'][1]['day']['icon']+".gif").convert()
-      DISPLAYSURF.blit(icon, (2*so+s1w+5+110,690))
+      DISPLAYSURF.blit(icon, (2*so+s1w+5+110,690 + move_y_axis))
     if os.path.isfile(WEATHER_IMG+weather['forecasts'][2]['day']['icon']+".gif"):
       icon = pygame.image.load(WEATHER_IMG+weather['forecasts'][2]['day']['icon']+".gif").convert()
-      DISPLAYSURF.blit(icon, (2*so+s1w+5+220,690))
+      DISPLAYSURF.blit(icon, (2*so+s1w+5+220,690 + move_y_axis))
 
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 15)
     text_surface = font.render(weather['forecasts'][0]['day_of_week'], True, (255, 255, 255), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,740))
+    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,740 + move_y_axis))
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 15)
     text_surface = font.render("High: " + weather['forecasts'][0]['high'], True, (255, 100, 100), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,770))
+    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,770 + move_y_axis))
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 15)
     text_surface = font.render("Low: " + weather['forecasts'][0]['low'], True, (100, 255, 100), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,800))
+    DISPLAYSURF.blit(text_surface, (2*so+s1w+5,800 + move_y_axis))
 
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 15)
     text_surface = font.render(weather['forecasts'][1]['day_of_week'], True, (220, 220, 220), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+110,740))
+    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+110,740 + move_y_axis))
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 15)
     text_surface = font.render("High: " + weather['forecasts'][1]['high'], True, (255, 100, 100), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+110,770))
+    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+110,770 + move_y_axis))
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 15)
     text_surface = font.render("Low: " + weather['forecasts'][1]['low'], True, (100, 255, 100), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+110,800))
+    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+110,800 + move_y_axis))
 
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 15)
     text_surface = font.render(weather['forecasts'][2]['day_of_week'], True, (200, 200, 200), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+220,740))
+    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+220,740 + move_y_axis))
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 15)
     text_surface = font.render("High: " + weather['forecasts'][2]['high'], True, (255, 100, 100), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+220,770))
+    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+220,770 + move_y_axis))
     font = pygame.font.Font("../fonts/TitilliumTitle12.otf", 15)
     text_surface = font.render("Low: " + weather['forecasts'][2]['low'], True, (100, 255, 100), None)  # White text  
-    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+220,800))
+    DISPLAYSURF.blit(text_surface, (2*so+s1w+5+220,800 + move_y_axis))
 
     print "."
 
