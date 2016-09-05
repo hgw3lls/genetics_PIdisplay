@@ -16,7 +16,7 @@ os.environ["SDL_FBDEV"] = "/dev/fb0"
 os.environ["SDL_NOMOUSE"]="1"
 
 SLIDES_DIR = "/var/media/current/"
-LOGOS_DIR =  "/var/media/logos/"
+LOGOS_DIR =  "/var/media/logos/topright"
 DATA_DIR =  "/var/media/data/"
 WEATHER_IMG = "/var/media/data/yimg/"
 
@@ -115,34 +115,34 @@ def main():
 def dispLogo():
     DISPLAYSURF.fill(BLACK)
 
-    logo = pygame.image.load("/var/media/background.png").convert()
+    logo = pygame.image.load("/var/media/logos/GGS_Case Logo Wide.png").convert()
     logo2 = pygame.transform.scale(logo, (DISPLAY_W, DISPLAY_H))
     DISPLAYSURF.blit(logo2, (0,0))
 
     
 
-    fontObj = pygame.font.Font('../fonts/TitilliumMaps26L.otf', 42)
+    # fontObj = pygame.font.Font('../fonts/TitilliumMaps26L.otf', 42)
 
-    textSurfaceObj = fontObj.render('Department of Genetics and Genome Sciences', True, BLACK)
-    textRectObj = textSurfaceObj.get_rect()
+    # textSurfaceObj = fontObj.render('Department of Genetics and Genome Sciences', True, BLACK)
+    # textRectObj = textSurfaceObj.get_rect()
 
-    textRectObj.center = (DISPLAY_W/2,DISPLAY_H/2+20+1)
-    DISPLAYSURF.blit (textSurfaceObj, textRectObj)
+    # textRectObj.center = (DISPLAY_W/2,DISPLAY_H/2+20+1)
+    # DISPLAYSURF.blit (textSurfaceObj, textRectObj)
 
-    textRectObj.center = (DISPLAY_W/2+1,DISPLAY_H/2+20-1)
-    DISPLAYSURF.blit (textSurfaceObj, textRectObj)
+    # textRectObj.center = (DISPLAY_W/2+1,DISPLAY_H/2+20-1)
+    # DISPLAYSURF.blit (textSurfaceObj, textRectObj)
 
-    textRectObj.center = (DISPLAY_W/2+1,DISPLAY_H/2+20)
-    DISPLAYSURF.blit (textSurfaceObj, textRectObj)
+    # textRectObj.center = (DISPLAY_W/2+1,DISPLAY_H/2+20)
+    # DISPLAYSURF.blit (textSurfaceObj, textRectObj)
 
-    textRectObj.center = (DISPLAY_W/2-1,DISPLAY_H/2+20)
-    DISPLAYSURF.blit (textSurfaceObj, textRectObj)
+    # textRectObj.center = (DISPLAY_W/2-1,DISPLAY_H/2+20)
+    # DISPLAYSURF.blit (textSurfaceObj, textRectObj)
 
-    textSurfaceObj = fontObj.render('Department of Genetics and Genome Sciences', True, WHITE)
-    textRectObj = textSurfaceObj.get_rect()
+    # textSurfaceObj = fontObj.render('Department of Genetics and Genome Sciences', True, WHITE)
+    # textRectObj = textSurfaceObj.get_rect()
 
-    textRectObj.center = (DISPLAY_W/2,DISPLAY_H/2+20)
-    DISPLAYSURF.blit (textSurfaceObj, textRectObj)
+    # textRectObj.center = (DISPLAY_W/2,DISPLAY_H/2+20)
+    # DISPLAYSURF.blit (textSurfaceObj, textRectObj)
 
 def mainLoop():
     global slide_num, last_slide, last_text1, last_text2, last_logo, line1_num, line2_num, logo_num
